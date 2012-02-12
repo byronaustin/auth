@@ -14,7 +14,7 @@ gem "bcrypt-ruby", :require => "bcrypt"
 
 # Deploy with Capistrano
 # gem 'capistrano'
-
+# gem 'ruby-pg'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
