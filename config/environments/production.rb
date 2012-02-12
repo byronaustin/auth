@@ -51,6 +51,15 @@ Auth::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
-  config.action_mailer.default_url_options = { :host => "localhost:3000" }
+#  config.action_mailer.default_url_options = { :host => "localhost:3000" }
+  ActionMailer::Base.smtp_settings = {
+  :address => 'smtp.gmail.com',
+  :port => 587,
+  :domain => 'www.gmail.com',
+  :authentication => :login,
+  :user_name => 'byronaustin007@gmail.com',
+  :password => 'Princess12!',
+  :enable_starttls_auto => true
+  }
   
 end
